@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <title>Library Management System</title>
+    <style>
+        td label {
+            font-size: 1.5rem !important;
+            text-shadow: 0px 0px 10px black;
+            font-weight: bold;
+        }
+
+        input {
+            margin: 0.5rem 2rem !important;
+        }
+
+        #submit {
+            margin: 2rem 0 0 14rem !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add Book Details</h1>
+
+    <div id="options">
+        <table>
+            <tr>
+                <td><label> Book Title</label></td>
+                <td> <input type="text" placeholder="Enter Book Title"></td>
+            </tr>
+            <tr>
+                <td><label> Book Author</label></td>
+                <td> <input type="text" placeholder="Enter Book Author"></td>
+            </tr>
+            <tr>
+                <td><label> Edition</label></td>
+                <td> <input type="text" placeholder="Enter Edition"></td>
+            </tr>
+            <tr>
+                <td><label> Book Price</label></td>
+                <td><input type="text" id="price" placeholder="Enter Book Price"></input>
+                </td>
+            </tr>
+            <tr>
+                <td><label> Book Type</label></td>
+                <td> <input type="text" placeholder="Enter Book type"></td>
+            </tr>
+        </table>
+        <input type="button" value="Add Book" id="submit"></input>
+        <br></br>
+        <a href="./index.html" id="home">Home</a>
+    </div>
+
+</body>
+
+</html>
