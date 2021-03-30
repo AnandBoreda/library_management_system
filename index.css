@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Yatra+One&display=swap");
 html,
 body {
   margin: 0%;
@@ -6,7 +6,7 @@ body {
 }
 * {
   color: white;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 ::placeholder {
   color: #ffffff;
@@ -28,7 +28,8 @@ ul {
   list-style-type: none;
 }
 li {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   padding: 0.5rem 0;
 }
 li i {
@@ -43,9 +44,11 @@ li i {
   float: right;
 }
 
-input[type="text"] {
+input[type="text"],
+select,
+fieldset {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 1.5rem 1.5rem 0 8rem;
   padding: 0.8rem 2rem;
   text-align: center;
@@ -54,14 +57,16 @@ input[type="text"] {
   border: 1px solid black;
   border-radius: 12px;
   box-shadow: 0px 0px 15px black;
+  transition: 0.5s;
 }
 input[type="text"]:focus {
   background-color: #7395b0;
+  transform: scale(1.1);
 }
 
 input[type="button"] {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.5rem 1.5rem;
   border-radius: 10px;
   outline: none;
@@ -82,8 +87,8 @@ input[type="button"]:hover {
 
 #home {
   position: absolute;
-  top: 82%;
-  left: 50%;
+  top: 85%;
+  left: 45%;
   text-align: center;
   text-decoration: none;
   color: #e0caab;
@@ -101,4 +106,70 @@ input[type="button"]:hover {
   color: #282c4f;
   transform: scale(1.2);
   box-shadow: 0px 0px 15px black;
+}
+#addBook td label {
+  font-size: 1.5rem !important;
+  text-shadow: 0px 0px 10px black;
+  font-weight: bold;
+}
+
+#addBook input {
+  margin: 0.5rem 2rem !important;
+}
+
+#addBook #bookType {
+  margin: 0.5rem 1.5rem 0 2rem;
+  width: 80%;
+}
+
+#addBook #submit {
+  margin: 2rem 0 0 2.5rem !important;
+}
+#removeBook td label {
+  font-size: 1.5rem !important;
+  text-shadow: 0px 0px 10px black;
+  font-weight: bold;
+}
+
+#removeBook input {
+  margin: 0.5rem 2rem !important;
+}
+
+#removeBook #submit {
+  margin: 2rem 0 0 14rem !important;
+}
+#searchBook #options {
+  width: 80%;
+  text-align: center;
+}
+#searchBook fieldset {
+  border-radius: 20px;
+  width: 50%;
+  text-align: left;
+}
+
+#searchBook input[type="text"] {
+  width: 87%;
+  height: 100%;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  margin: 0% !important;
+}
+
+#searchBook #submit {
+  margin: 2rem 0 0 14rem !important;
+}
+#updateBook td label {
+  font-size: 1.5rem !important;
+  text-shadow: 0px 0px 10px black;
+  font-weight: bold;
+}
+
+#updateBook input {
+  margin: 1rem 2rem !important;
+}
+
+#updateBook #submit {
+  margin: 2rem 0 0 14rem !important;
 }
