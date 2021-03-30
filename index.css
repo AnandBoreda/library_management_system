@@ -61,7 +61,7 @@ fieldset {
 }
 input[type="text"]:focus {
   background-color: #7395b0;
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 input[type="button"] {
